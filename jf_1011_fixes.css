@@ -94,11 +94,6 @@
   order: 6 !important;
 }
 
-/* ---- Compact episodes list fix ---- */
-.listItemImage.listItemImage-large.itemAction.lazy {
-  transition: filter 0.2s;
-}
-
 /* ---- Dashboard header fix ---- */
 .force-scroll {
   overflow-y: auto;
