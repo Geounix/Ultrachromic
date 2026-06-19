@@ -1,0 +1,105 @@
+/* ============================================================
+   Ultrachromic FULL - Jellyfin 10.11.x
+   The ultimate "jevi" look: compact, colorful, glowing, glassy
+   ============================================================ */
+
+/* 1. Font */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/jf_font.css');
+
+/* 2. Fixes & base */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/fixes.css');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/base.css');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/accentlist.css');
+
+/* 3. 10.11 compatibility */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/jf_1011_fixes.css');
+
+/* 4. Rounded corners */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/rounding.css');
+
+/* 5. Smaller cast list */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/smallercast.css');
+
+/* 6. Compact episode list */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/episodelist/episodes_compactlist.css');
+
+/* 7. Transparent top bar */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/header/header_transparent-dashboard.css');
+
+/* 8. Login with frame */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/login/login_frame.css');
+
+/* 9. Input fields with border */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/fields/fields_border.css');
+
+/* 10. Corner indicators */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/cornerindicator/indicator_corner.css');
+
+/* 11. Colorful type (dark + accent colors) */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/type/colorful.css');
+
+/* 12. Title page with logo */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/titlepage/title_simple-logo.css');
+
+/* 13. Floating progress bar */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/progress/floating.css');
+
+/* 14. Effects - GLOW + GLASS + PAN + RIPPLE */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/effects/hoverglow.css');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/effects/glassy.css');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/effects/pan-animation.css');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/effects/ripple.css');
+
+/* ============================================================
+   MANUAL TWEAKS - The "jevi" finishing touches
+   ============================================================ */
+
+:root {
+  --accent: 98, 121, 205;
+  --rounding: 12px;
+}
+
+/* Cinematic backdrop - blurry, saturated, dark */
+.backdropImage {
+  filter: blur(18px) saturate(130%) contrast(120%) brightness(35%);
+}
+
+/* Custom accent for login page (overrides colorful type default) */
+#loginPage {
+  background:
+    linear-gradient(135deg, rgba(98, 121, 205, 0.3), rgba(0, 0, 0, 0.7)),
+    url(https://raw.githubusercontent.com/CTalvio/Ultrachromic/main/assets/background.png) !important;
+  background-size: cover !important;
+}
+
+/* Make top header glassy */
+.skinHeader-withBackground {
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Bigger, bolder titles */
+.pageTitle {
+  font-size: 1.4em !important;
+  font-weight: 700 !important;
+}
+
+/* Glow on the entire card, not just overlay */
+.cardBox:hover {
+  box-shadow: 0 0 15px rgba(var(--accent), 0.4) !important;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Floating progress bar - thicker & more visible */
+#indexPage .itemProgressBar,
+.libraryPage .itemProgressBar,
+#itemDetailPage .itemProgressBar {
+  height: 5px;
+  margin: .5em .6em;
+}
+
+/* Now Playing bar - glassy */
+.nowPlayingBar {
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
