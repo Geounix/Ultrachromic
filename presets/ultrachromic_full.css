@@ -38,8 +38,8 @@
 /* 11. Colorful type (dark + accent colors) */
 @import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/type/colorful.css');
 
-/* 12. Title page with logo */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/titlepage/title_simple-logo.css');
+/* 12. Title page without logo */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/titlepage/title_simple.css');
 
 /* 13. Floating progress bar */
 @import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/progress/floating.css');
