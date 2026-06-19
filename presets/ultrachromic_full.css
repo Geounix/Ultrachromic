@@ -72,9 +72,11 @@
   background-size: cover !important;
 }
 
-/* Make top header glassy */
+/* Make top header glassy - must override 10.11's .skinHeader.semiTransparent { backdrop-filter: none !important } */
+.skinHeader.semiTransparent,
 .skinHeader-withBackground {
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
   background-color: rgba(0, 0, 0, 0.25) !important;
 }
 
