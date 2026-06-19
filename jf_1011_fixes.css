@@ -1,57 +1,10 @@
 /* =====================================================
    Ultrachromic - Jellyfin 10.11 Compatibility Fixes
-   Include this file when running Jellyfin 10.11.x
+   Cosmetic fixes only - let 10.11 handle layout natively
    ===================================================== */
 
-/* ---- Detail Page 10.11 Restructuring ---- */
-.layout-desktop .detailImageContainer .card {
-    position: absolute !important;
-    top: 2em !important;
-    width: 18.3vw !important;
-    left: 3.3% !important;
-}
-.layout-desktop .detailImageContainer {
-    margin-left: 0 !important;
-    margin-top: 0 !important;
-}
-.layout-desktop .infoWrapper {
-    margin-top: 245px !important;
-    margin-left: 20.8vw !important;
-}
-.layout-desktop .nameContainer {
-    margin-top: -3em !important;
-}
-.layout-desktop .itemMiscInfo {
-    margin-left: 0.75em !important;
-    margin-top: 1em !important;
-}
-.layout-desktop .detailSection {
-    margin-right: 0 !important;
-}
-.layout-desktop .detailPageContent {
-    padding-left: 3.3% !important;
-    padding-right: 0 !important;
-}
-
-/* Ultrawide aspect ratio support for 10.11 */
-@media (min-aspect-ratio: 1.98/1) {
-  .detailImageContainer .card {
-    width: 21vw !important;
-    left: 3.3% !important;
-  }
-  .layout-desktop .infoWrapper {
-    margin-left: 24.3vw !important;
-  }
-}
-@media (min-aspect-ratio: 2.7/1) {
-  .detailImageContainer .card {
-    width: 16vw !important;
-    left: 3.3% !important;
-  }
-  .layout-desktop .infoWrapper {
-    margin-left: 19.3vw !important;
-  }
-}
+/* ---- Detail Page 10.11 - Let Jellyfin handle layout ---- */
+/* Removed absolute positioning overrides - 10.11 uses .detailRibbon + .infoWrapper natively */
 
 /* ---- MUI Dashboard Theming ---- */
 .MuiPaper-root,
@@ -98,4 +51,10 @@
 .force-scroll {
   overflow-y: auto;
   overflow-x: auto;
+}
+
+/* ---- Header blur fix for 10.11 ---- */
+/* backdrop-filter needs proper stacking context in 10.11 */
+.skinHeader-withBackground {
+  isolation: isolate;
 }

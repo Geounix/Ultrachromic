@@ -38,31 +38,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     margin-top: 4rem;
 }
 
-/*Stop covers from being scrolled on desktop - 10.11 compatible*/
-.layout-desktop .detailImageContainer .card {
-    position: absolute !important;
-    top: 2em !important;
-    width: 18.3vw !important;
-    left: 3.3% !important;
-}
-.layout-desktop .detailImageContainer {
-    margin-left: 0 !important;
-    margin-top: 0 !important;
-}
-.layout-desktop .infoWrapper {
-    margin-top: 245px !important;
-    margin-left: 20.8vw !important;
-}
-.layout-desktop .nameContainer {
-    margin-top: -3em !important;
-}
-.layout-desktop .itemMiscInfo {
-    margin-left: 0.75em !important;
-    margin-top: 1em !important;
-}
-.layout-mobile .detailImageContainer .card {
-    position: absolute !important;
-}
+/*Detail page - let Jellyfin 10.11 handle layout natively*/
 /*Top "task bar" enlarge text*/
 .headerTabs.sectionTabs {
   text-size-adjust: 110%;
