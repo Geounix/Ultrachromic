@@ -1,0 +1,158 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - text:                 
+    - generic:
+      - banner [ref=e2179]:
+        - generic [ref=e2180]:
+          - button "Back" [ref=e2181] [cursor=pointer]:
+            - img [ref=e2182]
+          - link "Help" [ref=e2185] [cursor=pointer]:
+            - /url: https://jellyfin.org/docs/general/server/settings
+            - img [ref=e2186]
+          - button "User Menu" [ref=e2189] [cursor=pointer]:
+            - img [ref=e2191]
+      - generic [ref=e2193]:
+        - list [ref=e2194]:
+          - listitem [ref=e2195]:
+            - link "Geunix 10.11.11" [ref=e2196] [cursor=pointer]:
+              - /url: "#/"
+              - img [ref=e2198]
+              - generic [ref=e2199]:
+                - heading "Geunix" [level=6] [ref=e2200]
+                - paragraph [ref=e2201]: 10.11.11
+        - list "Server" [ref=e2202]:
+          - generic [ref=e2203]: Server
+          - listitem [ref=e2204]:
+            - link "Dashboard" [ref=e2205] [cursor=pointer]:
+              - /url: "#/dashboard"
+              - img [ref=e2207]
+              - generic [ref=e2210]: Dashboard
+          - listitem [ref=e2211]:
+            - link "General" [ref=e2212] [cursor=pointer]:
+              - /url: "#/dashboard/settings"
+              - img [ref=e2214]
+              - generic [ref=e2217]: General
+          - link "Branding" [ref=e2218] [cursor=pointer]:
+            - /url: "#/dashboard/branding"
+            - img [ref=e2220]
+            - generic [ref=e2223]: Branding
+          - listitem [ref=e2224]:
+            - link "Users" [ref=e2225] [cursor=pointer]:
+              - /url: "#/dashboard/users"
+              - img [ref=e2227]
+              - generic [ref=e2230]: Users
+          - listitem [ref=e2231]:
+            - button "Libraries" [ref=e2232] [cursor=pointer]:
+              - img [ref=e2234]
+              - generic [ref=e2237]: Libraries
+              - img [ref=e2238]
+          - listitem [ref=e2240]:
+            - button "Playback" [ref=e2241] [cursor=pointer]:
+              - img [ref=e2243]
+              - generic [ref=e2246]: Playback
+              - img [ref=e2247]
+        - list "Devices" [ref=e2249]:
+          - generic [ref=e2250]: Devices
+          - listitem [ref=e2251]:
+            - link "Devices" [ref=e2252] [cursor=pointer]:
+              - /url: "#/dashboard/devices"
+              - img [ref=e2254]
+              - generic [ref=e2257]: Devices
+          - listitem [ref=e2258]:
+            - link "Activity" [ref=e2259] [cursor=pointer]:
+              - /url: "#/dashboard/activity"
+              - img [ref=e2261]
+              - generic [ref=e2264]: Activity
+        - list "Live TV" [ref=e2265]:
+          - generic [ref=e2266]: Live TV
+          - listitem [ref=e2267]:
+            - link "Live TV" [ref=e2268] [cursor=pointer]:
+              - /url: "#/dashboard/livetv"
+              - img [ref=e2270]
+              - generic [ref=e2273]: Live TV
+          - listitem [ref=e2274]:
+            - link "DVR" [ref=e2275] [cursor=pointer]:
+              - /url: "#/dashboard/livetv/recordings"
+              - img [ref=e2277]
+              - generic [ref=e2280]: DVR
+        - list "Plugins" [ref=e2281]:
+          - generic [ref=e2282]: Plugins
+          - link "Plugins" [ref=e2283] [cursor=pointer]:
+            - /url: "#/dashboard/plugins"
+            - img [ref=e2285]
+            - generic [ref=e2288]: Plugins
+        - list "Advanced" [ref=e2289]:
+          - generic [ref=e2290]: Advanced
+          - listitem [ref=e2291]:
+            - link "Networking" [ref=e2292] [cursor=pointer]:
+              - /url: "#/dashboard/networking"
+              - img [ref=e2294]
+              - generic [ref=e2297]: Networking
+          - listitem [ref=e2298]:
+            - link "API Keys" [ref=e2299] [cursor=pointer]:
+              - /url: "#/dashboard/keys"
+              - img [ref=e2301]
+              - generic [ref=e2304]: API Keys
+          - listitem [ref=e2305]:
+            - link "Backups" [ref=e2306] [cursor=pointer]:
+              - /url: "#/dashboard/backups"
+              - img [ref=e2308]
+              - generic [ref=e2311]: Backups
+          - listitem [ref=e2312]:
+            - link "Logs" [ref=e2313] [cursor=pointer]:
+              - /url: "#/dashboard/logs"
+              - img [ref=e2315]
+              - generic [ref=e2318]: Logs
+          - listitem [ref=e2319]:
+            - link "Scheduled Tasks" [ref=e2320] [cursor=pointer]:
+              - /url: "#/dashboard/tasks"
+              - img [ref=e2322]
+              - generic [ref=e2326]: Scheduled Tasks
+      - main:
+        - generic [ref=e2330]:
+          - heading "Settings" [level=1] [ref=e2331]
+          - generic [ref=e2332]:
+            - generic [ref=e2333]: Server name
+            - textbox "Server name" [ref=e2335]: Geunix
+            - paragraph [ref=e2336]: This name will be used to identify the server and will default to the server's hostname.
+          - generic [ref=e2337]:
+            - generic [ref=e2338]: Preferred display language
+            - generic [ref=e2339]:
+              - combobox "Preferred display language English" [ref=e2340] [cursor=pointer]: English
+              - textbox: en-US
+              - img
+            - generic [ref=e2341]:
+              - generic [ref=e2342]: Translating Jellyfin is an ongoing project.
+              - link "Learn how you can contribute." [ref=e2343] [cursor=pointer]:
+                - /url: https://jellyfin.org/docs/general/contributing/#translating
+          - heading "Paths" [level=2] [ref=e2344]
+          - generic [ref=e2345]:
+            - generic: Cache path
+            - generic [ref=e2346]:
+              - textbox "Cache path" [ref=e2347]
+              - button [ref=e2349] [cursor=pointer]:
+                - img [ref=e2350]
+            - paragraph [ref=e2352]: Specify a custom location for server cache files such as images. Leave blank to use the server default.
+          - generic [ref=e2353]:
+            - generic: Metadata path
+            - generic [ref=e2354]:
+              - textbox "Metadata path" [ref=e2355]
+              - button [ref=e2357] [cursor=pointer]:
+                - img [ref=e2358]
+            - paragraph [ref=e2360]: Specify a custom location for downloaded artwork and metadata.
+          - heading "Quick Connect" [level=2] [ref=e2361]
+          - generic [ref=e2363] [cursor=pointer]:
+            - generic [ref=e2364]:
+              - checkbox "Enable Quick Connect on this server" [checked] [ref=e2365]
+              - img [ref=e2366]
+            - generic [ref=e2368]: Enable Quick Connect on this server
+          - heading "Performance" [level=2] [ref=e2369]
+          - generic [ref=e2370]:
+            - generic: Parallel library scan tasks limit
+            - spinbutton "Parallel library scan tasks limit" [ref=e2372]
+            - paragraph [ref=e2373]: "Maximum number of parallel tasks during library scans. Leaving this empty will choose a limit based on your system's core count. WARNING: Setting this number too high may cause issues with network file systems; if you encounter problems lower this number."
+          - generic [ref=e2374]:
+            - generic: Parallel image encoding limit
+            - spinbutton "Parallel image encoding limit" [ref=e2376]
+            - paragraph [ref=e2377]: Maximum number of image encodings that are allowed to run in parallel. Leaving this empty will choose a limit based on your systems core count.
+          - button "Save" [ref=e2378] [cursor=pointer]

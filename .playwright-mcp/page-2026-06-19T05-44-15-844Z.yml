@@ -1,0 +1,65 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - generic [ref=e6]:
+        - link "Home" [ref=e32] [cursor=pointer]:
+          - /url: "#/home"
+          - generic [ref=e33]: 
+          - generic [ref=e34]: Home
+        - generic [ref=e35]:
+          - heading "Media" [level=3] [ref=e36]
+          - link "Live TV" [ref=e37] [cursor=pointer]:
+            - /url: "#/livetv?collectionType=livetv"
+            - generic [ref=e38]: 
+            - generic [ref=e39]: Live TV
+          - link "Guide" [ref=e40] [cursor=pointer]:
+            - /url: "#/livetv?tab=1"
+            - generic [ref=e41]: 
+            - generic [ref=e42]: Guide
+          - link "Movies" [ref=e43] [cursor=pointer]:
+            - /url: "#/movies?topParentId=f137a2dd21bbc1b99aa5c0f6bf02a805&collectionType=movies"
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Movies
+          - link "Shows" [ref=e46] [cursor=pointer]:
+            - /url: "#/tv?topParentId=a656b907eb3a73532e40e44b968d0225&collectionType=tvshows"
+            - generic [ref=e47]: 
+            - generic [ref=e48]: Shows
+        - generic [ref=e49]:
+          - heading "Administration" [level=3] [ref=e50]
+          - link "Dashboard" [ref=e51] [cursor=pointer]:
+            - /url: "#/dashboard"
+            - generic [ref=e52]: 
+            - generic [ref=e53]: Dashboard
+          - link "Metadata Manager" [ref=e54] [cursor=pointer]:
+            - /url: "#/metadata"
+            - generic [ref=e55]: 
+            - generic [ref=e56]: Metadata Manager
+        - generic [ref=e57]:
+          - heading "User" [level=3] [ref=e58]
+          - link "Settings" [ref=e59] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e60]: 
+            - generic [ref=e61]: Settings
+          - link "Sign Out" [ref=e62] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e63]: 
+            - generic [ref=e64]: Sign Out
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - button "Back" [ref=e638] [cursor=pointer]:
+            - generic [ref=e639]: 
+          - button "Home" [ref=e640] [cursor=pointer]:
+            - generic [ref=e641]: 
+          - button "Menu" [ref=e65] [cursor=pointer]:
+            - generic [ref=e66]: 
+          - heading [level=3] [ref=e10]: Branding
+        - generic [ref=e67]:
+          - button "SyncPlay" [ref=e68] [cursor=pointer]:
+            - generic [ref=e69]: 
+          - text: 
+          - button "Cast to Device" [ref=e70] [cursor=pointer]:
+            - generic [ref=e71]: 
+          - button "Search" [ref=e72] [cursor=pointer]:
+            - generic [ref=e73]: 
+          - button "Geunix" [ref=e74] [cursor=pointer]:
+            - generic [ref=e75]: 

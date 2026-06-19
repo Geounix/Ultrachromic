@@ -1,0 +1,517 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - generic [ref=e6]:
+        - link "Home" [ref=e32] [cursor=pointer]:
+          - /url: "#/home"
+          - generic [ref=e33]: 
+          - generic [ref=e34]: Home
+        - generic [ref=e35]:
+          - heading "Media" [level=3] [ref=e36]
+          - link "Live TV" [ref=e37] [cursor=pointer]:
+            - /url: "#/livetv?collectionType=livetv"
+            - generic [ref=e38]: 
+            - generic [ref=e39]: Live TV
+          - link "Guide" [ref=e40] [cursor=pointer]:
+            - /url: "#/livetv?tab=1"
+            - generic [ref=e41]: 
+            - generic [ref=e42]: Guide
+          - link "Movies" [ref=e43] [cursor=pointer]:
+            - /url: "#/movies?topParentId=f137a2dd21bbc1b99aa5c0f6bf02a805&collectionType=movies"
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Movies
+          - link "Shows" [ref=e46] [cursor=pointer]:
+            - /url: "#/tv?topParentId=a656b907eb3a73532e40e44b968d0225&collectionType=tvshows"
+            - generic [ref=e47]: 
+            - generic [ref=e48]: Shows
+        - generic [ref=e49]:
+          - heading "Administration" [level=3] [ref=e50]
+          - link "Dashboard" [ref=e51] [cursor=pointer]:
+            - /url: "#/dashboard"
+            - generic [ref=e52]: 
+            - generic [ref=e53]: Dashboard
+          - link "Metadata Manager" [ref=e54] [cursor=pointer]:
+            - /url: "#/metadata"
+            - generic [ref=e55]: 
+            - generic [ref=e56]: Metadata Manager
+        - generic [ref=e57]:
+          - heading "User" [level=3] [ref=e58]
+          - link "Settings" [ref=e59] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e60]: 
+            - generic [ref=e61]: Settings
+          - link "Sign Out" [ref=e62] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e63]: 
+            - generic [ref=e64]: Sign Out
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - generic [ref=e9]:
+            - text:  
+            - button "Menu" [ref=e65] [cursor=pointer]:
+              - generic [ref=e66]: 
+            - heading [level=3] [ref=e10]
+          - generic [ref=e67]:
+            - button "SyncPlay" [ref=e68] [cursor=pointer]:
+              - generic [ref=e69]: 
+            - text: 
+            - button "Cast to Device" [ref=e70] [cursor=pointer]:
+              - generic [ref=e71]: 
+            - button "Search" [ref=e72] [cursor=pointer]:
+              - generic [ref=e73]: 
+            - button "Geunix" [ref=e74] [cursor=pointer]:
+              - generic [ref=e75]: 
+        - generic [ref=e1624]:
+          - button "Home" [ref=e1625] [cursor=pointer]:
+            - generic [ref=e1626]: Home
+          - button "Favourites" [ref=e1627] [cursor=pointer]:
+            - generic [ref=e1628]: Favourites
+    - generic [ref=e1631]:
+      - generic [ref=e1632]:
+        - heading "My Media" [level=2] [ref=e1633]
+        - generic [ref=e1634]:  
+        - generic [ref=e1636]:
+          - generic [ref=e1638] [cursor=pointer]:
+            - generic [ref=e1639]:
+              - img "Live TV" [ref=e1641]:
+                - generic [ref=e1642]: 
+              - button "More" [ref=e1644]:
+                - generic [ref=e1645]: 
+            - link "Live TV" [ref=e1648]:
+              - /url: "#/livetv?collectionType=livetv"
+          - generic [ref=e1650] [cursor=pointer]:
+            - generic [ref=e1651]:
+              - img "Movies" [ref=e1653]:
+                - generic [ref=e1654]: 
+              - button "More" [ref=e1656]:
+                - generic [ref=e1657]: 
+            - link "Movies" [ref=e1660]:
+              - /url: "#/movies?topParentId=f137a2dd21bbc1b99aa5c0f6bf02a805&collectionType=movies"
+          - generic [ref=e1662] [cursor=pointer]:
+            - generic [ref=e1663]:
+              - generic [ref=e1665]: 
+              - img "Shows" [ref=e1666]
+              - button "More" [ref=e1668]:
+                - generic [ref=e1669]: 
+            - link "Shows" [ref=e1672]:
+              - /url: "#/tv?topParentId=a656b907eb3a73532e40e44b968d0225&collectionType=tvshows"
+      - generic [ref=e1673]:
+        - heading "Continue Watching" [level=2] [ref=e1674]
+        - generic [ref=e1675]:  
+        - generic [ref=e1677]:
+          - generic [ref=e1679] [cursor=pointer]:
+            - generic [ref=e1680]:
+              - generic [ref=e1682]: 
+              - img "All's Well That Ends Well" [ref=e1683]
+              - generic:
+                - button "Play" [ref=e1687]:
+                  - generic [ref=e1688]: 
+                - generic [ref=e1689]:
+                  - button "Mark played" [ref=e1690]:
+                    - generic [ref=e1691]: 
+                  - button "Add to favourites" [ref=e1692]:
+                    - generic [ref=e1693]: 
+                  - button "More" [ref=e1694]:
+                    - generic [ref=e1695]: 
+            - link "TIGER & BUNNY" [ref=e1698]:
+              - /url: "#/details?id=c31c5ab65d4a36244745734c9423a1d1&serverId=6bb0b1972360457da33fbf7b143a09a5"
+            - link "S1:E1 - All's Well That Ends Well" [ref=e1701]:
+              - /url: "#/details?id=1c058ddf7822abb37e6891374b0eea11&serverId=6bb0b1972360457da33fbf7b143a09a5"
+          - generic [ref=e1703] [cursor=pointer]:
+            - generic [ref=e1704]:
+              - generic [ref=e1706]: 
+              - img "I Picked Up the Demon King" [ref=e1707]
+              - generic:
+                - button "Play" [ref=e1711]:
+                  - generic [ref=e1712]: 
+                - generic [ref=e1713]:
+                  - button "Mark played" [ref=e1714]:
+                    - generic [ref=e1715]: 
+                  - button "Add to favourites" [ref=e1716]:
+                    - generic [ref=e1717]: 
+                  - button "More" [ref=e1718]:
+                    - generic [ref=e1719]: 
+            - link "Beelzebub" [ref=e1722]:
+              - /url: "#/details?id=eac389042ce7b0f78c256664bf3f3e52&serverId=6bb0b1972360457da33fbf7b143a09a5"
+            - link "S1:E1 - I Picked Up the Demon King" [ref=e1725]:
+              - /url: "#/details?id=1e28ab8d8fe6882c84534a8162adfca1&serverId=6bb0b1972360457da33fbf7b143a09a5"
+          - generic [ref=e1727] [cursor=pointer]:
+            - generic [ref=e1728]:
+              - generic [ref=e1730]: 
+              - img "One Piece" [ref=e1731]
+              - generic:
+                - button "Play" [ref=e1735]:
+                  - generic [ref=e1736]: 
+                - generic [ref=e1737]:
+                  - button "Mark played" [ref=e1738]:
+                    - generic [ref=e1739]: 
+                  - button "Add to favourites" [ref=e1740]:
+                    - generic [ref=e1741]: 
+                  - button "More" [ref=e1742]:
+                    - generic [ref=e1743]: 
+            - link "ONE PIECE" [ref=e1746]:
+              - /url: "#/details?id=c928c850f9ccf3f8ed42f5f6727c161b&serverId=6bb0b1972360457da33fbf7b143a09a5"
+            - link "S23:E1166 - One Piece" [ref=e1749]:
+              - /url: "#/details?id=7bdfb7e40c7d44a6d45201916a2376df&serverId=6bb0b1972360457da33fbf7b143a09a5"
+          - generic [ref=e1751] [cursor=pointer]:
+            - generic [ref=e1752]:
+              - generic [ref=e1754]: 
+              - img "Undertaker" [ref=e1755]
+              - generic:
+                - button "Play" [ref=e1759]:
+                  - generic [ref=e1760]: 
+                - generic [ref=e1761]:
+                  - button "Mark played" [ref=e1762]:
+                    - generic [ref=e1763]: 
+                  - button "Add to favourites" [ref=e1764]:
+                    - generic [ref=e1765]: 
+                  - button "More" [ref=e1766]:
+                    - generic [ref=e1767]: 
+            - link "86 EIGHTY-SIX" [ref=e1770]:
+              - /url: "#/details?id=8b239b496a5f8e6c3e2221610b02724b&serverId=6bb0b1972360457da33fbf7b143a09a5"
+            - link "S1:E1 - Undertaker" [ref=e1773]:
+              - /url: "#/details?id=47512bb374435a0a74761a7576505a99&serverId=6bb0b1972360457da33fbf7b143a09a5"
+          - generic [ref=e1775] [cursor=pointer]:
+            - generic [ref=e1776]:
+              - generic [ref=e1778]: 
+              - img "The Rebirth of the King" [ref=e1779]
+              - generic:
+                - button "Play" [ref=e1783]:
+                  - generic [ref=e1784]: 
+                - generic [ref=e1785]:
+                  - button "Mark played" [ref=e1786]:
+                    - generic [ref=e1787]: 
+                  - button "Add to favourites" [ref=e1788]:
+                    - generic [ref=e1789]: 
+                  - button "More" [ref=e1790]:
+                    - generic [ref=e1791]: 
+            - link "The Beginning After the End" [ref=e1794]:
+              - /url: "#/details?id=6d488b762db4272e1070b354861592db&serverId=6bb0b1972360457da33fbf7b143a09a5"
+            - link "S1:E1 - The Rebirth of the King" [ref=e1797]:
+              - /url: "#/details?id=3aeea0859bab1b34b201bdf54820ae0a&serverId=6bb0b1972360457da33fbf7b143a09a5"
+      - text:    
+      - generic [ref=e1798]:
+        - link "Next Up" [ref=e1800] [cursor=pointer]:
+          - /url: "#/list?type=nextup&serverId=6bb0b1972360457da33fbf7b143a09a5"
+          - heading "Next Up" [level=2] [ref=e1801]
+          - generic [ref=e1802]: 
+        - generic [ref=e1803]:  
+        - generic [ref=e1807] [cursor=pointer]:
+          - generic [ref=e1808]:
+            - generic [ref=e1810]: 
+            - img "A Topic That Has Nothing to Do with Us" [ref=e1811]
+            - generic:
+              - button "Play" [ref=e1812]:
+                - generic [ref=e1813]: 
+              - generic [ref=e1814]:
+                - button "Mark played" [ref=e1815]:
+                  - generic [ref=e1816]: 
+                - button "Add to favourites" [ref=e1817]:
+                  - generic [ref=e1818]: 
+                - button "More" [ref=e1819]:
+                  - generic [ref=e1820]: 
+          - link "Ajin" [ref=e1823]:
+            - /url: "#/details?id=598620458c9aba7c1366e16042210572&serverId=6bb0b1972360457da33fbf7b143a09a5"
+          - link "S1:E1 - A Topic That Has Nothing to Do with Us" [ref=e1826]:
+            - /url: "#/details?id=d3a71dee3a745d8d1005642167c0e8f3&serverId=6bb0b1972360457da33fbf7b143a09a5"
+      - generic [ref=e1827]:
+        - text:   
+        - generic [ref=e1828]:
+          - link "Recently Added in Shows" [ref=e1830] [cursor=pointer]:
+            - /url: "#/tv?topParentId=a656b907eb3a73532e40e44b968d0225&collectionType=tvshows&tab=1"
+            - heading "Recently Added in Shows" [level=2] [ref=e1831]
+            - generic [ref=e1832]: 
+          - generic [ref=e1833]:
+            - button "Previous" [disabled] [ref=e1834]:
+              - generic [ref=e1835]: 
+            - button "Next" [ref=e1836] [cursor=pointer]:
+              - generic [ref=e1837]: 
+          - generic [ref=e1839]:
+            - generic [ref=e1841] [cursor=pointer]:
+              - generic [ref=e1842]:
+                - generic [ref=e1844]: 
+                - img "Black Lagoon" [ref=e1845]:
+                  - generic [ref=e1847]: "24"
+                - generic:
+                  - button "Play" [ref=e1848]:
+                    - generic [ref=e1849]: 
+                  - generic [ref=e1850]:
+                    - button "Mark played" [ref=e1851]:
+                      - generic [ref=e1852]: 
+                    - button "Add to favourites" [ref=e1853]:
+                      - generic [ref=e1854]: 
+                    - button "More" [ref=e1855]:
+                      - generic [ref=e1856]: 
+              - link "Black Lagoon" [ref=e1859]:
+                - /url: "#/details?id=c21f5b5b05d059ed4c2e14997a96e7b2&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e1860]: "2006"
+            - generic [ref=e1862] [cursor=pointer]:
+              - generic [ref=e1863]:
+                - generic [ref=e1865]: 
+                - img "Hitori No Shita - The Outcast" [ref=e1866]:
+                  - generic [ref=e1868]: "2"
+                - generic:
+                  - button "Play" [ref=e1869]:
+                    - generic [ref=e1870]: 
+                  - generic [ref=e1871]:
+                    - button "Mark played" [ref=e1872]:
+                      - generic [ref=e1873]: 
+                    - button "Add to favourites" [ref=e1874]:
+                      - generic [ref=e1875]: 
+                    - button "More" [ref=e1876]:
+                      - generic [ref=e1877]: 
+              - link "Hitori No Shita - The Outcast" [ref=e1880]:
+                - /url: "#/details?id=5e8d0db84d85f43336c3fe2b638dad98&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e1881]: 2015 - Present
+            - generic [ref=e1883] [cursor=pointer]:
+              - generic [ref=e1884]:
+                - generic [ref=e1886]: 
+                - img "DARLING in the FRANXX" [ref=e1887]:
+                  - generic [ref=e1889]: "24"
+                - generic:
+                  - button "Play" [ref=e1890]:
+                    - generic [ref=e1891]: 
+                  - generic [ref=e1892]:
+                    - button "Mark played" [ref=e1893]:
+                      - generic [ref=e1894]: 
+                    - button "Add to favourites" [ref=e1895]:
+                      - generic [ref=e1896]: 
+                    - button "More" [ref=e1897]:
+                      - generic [ref=e1898]: 
+              - link "DARLING in the FRANXX" [ref=e1901]:
+                - /url: "#/details?id=0523bf37e5fc37587db2ac7b77735885&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e1902]: "2018"
+            - generic [ref=e1904] [cursor=pointer]:
+              - generic [ref=e1905]:
+                - generic [ref=e1907]: 
+                - img "Big Order" [ref=e1908]:
+                  - generic [ref=e1910]: "10"
+                - generic:
+                  - button "Play" [ref=e1911]:
+                    - generic [ref=e1912]: 
+                  - generic [ref=e1913]:
+                    - button "Mark played" [ref=e1914]:
+                      - generic [ref=e1915]: 
+                    - button "Add to favourites" [ref=e1916]:
+                      - generic [ref=e1917]: 
+                    - button "More" [ref=e1918]:
+                      - generic [ref=e1919]: 
+              - link "Big Order" [ref=e1922]:
+                - /url: "#/details?id=b9efc87a88db75bb0c0226058b1c4f95&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e1923]: "2016"
+            - generic [ref=e1925] [cursor=pointer]:
+              - generic [ref=e1926]:
+                - generic [ref=e1928]: 
+                - img "Beelzebub" [ref=e1929]:
+                  - generic [ref=e1931]: "60"
+                - generic:
+                  - button "Play" [ref=e1932]:
+                    - generic [ref=e1933]: 
+                  - generic [ref=e1934]:
+                    - button "Mark played" [ref=e1935]:
+                      - generic [ref=e1936]: 
+                    - button "Add to favourites" [ref=e1937]:
+                      - generic [ref=e1938]: 
+                    - button "More" [ref=e1939]:
+                      - generic [ref=e1940]: 
+              - link "Beelzebub" [ref=e1943]:
+                - /url: "#/details?id=eac389042ce7b0f78c256664bf3f3e52&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e1944]: 2011 - 2012
+            - generic [ref=e1946] [cursor=pointer]:
+              - generic [ref=e1947]:
+                - generic [ref=e1949]: 
+                - img "The Brilliant Healer's New Life in the Shadows" [ref=e1950]:
+                  - generic [ref=e1952]: "12"
+                - generic:
+                  - button "Play" [ref=e1953]:
+                    - generic [ref=e1954]: 
+                  - generic [ref=e1955]:
+                    - button "Mark played" [ref=e1956]:
+                      - generic [ref=e1957]: 
+                    - button "Add to favourites" [ref=e1958]:
+                      - generic [ref=e1959]: 
+                    - button "More" [ref=e1960]:
+                      - generic [ref=e1961]: 
+              - link "The Brilliant Healer's New Life in the Shadows" [ref=e1964]:
+                - /url: "#/details?id=a8ff146fe2e82b4f58d8d110aae93876&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e1965]: 2025 - Present
+            - generic [ref=e1967] [cursor=pointer]:
+              - generic [ref=e1968]:
+                - generic [ref=e1970]: 
+                - img "TIGER & BUNNY" [ref=e1971]:
+                  - generic [ref=e1973]: "50"
+                - generic:
+                  - button "Play" [ref=e1974]:
+                    - generic [ref=e1975]: 
+                  - generic [ref=e1976]:
+                    - button "Mark played" [ref=e1977]:
+                      - generic [ref=e1978]: 
+                    - button "Add to favourites" [ref=e1979]:
+                      - generic [ref=e1980]: 
+                    - button "More" [ref=e1981]:
+                      - generic [ref=e1982]: 
+              - link "TIGER & BUNNY" [ref=e1985]:
+                - /url: "#/details?id=c31c5ab65d4a36244745734c9423a1d1&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e1986]: 2011 - 2022
+            - generic [ref=e1988] [cursor=pointer]:
+              - generic [ref=e1989]:
+                - generic [ref=e1991]: 
+                - img "Black Bullet" [ref=e1992]:
+                  - generic [ref=e1994]: "13"
+                - generic:
+                  - button "Play" [ref=e1995]:
+                    - generic [ref=e1996]: 
+                  - generic [ref=e1997]:
+                    - button "Mark played" [ref=e1998]:
+                      - generic [ref=e1999]: 
+                    - button "Add to favourites" [ref=e2000]:
+                      - generic [ref=e2001]: 
+                    - button "More" [ref=e2002]:
+                      - generic [ref=e2003]: 
+              - link "Black Bullet" [ref=e2006]:
+                - /url: "#/details?id=03aa66565fe5e9d68b7715e92f612472&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e2007]: "2014"
+            - generic [ref=e2009] [cursor=pointer]:
+              - generic [ref=e2010]:
+                - generic [ref=e2012]: 
+                - img "Blast of Tempest" [ref=e2013]:
+                  - generic [ref=e2015]: "24"
+                - generic:
+                  - button "Play" [ref=e2016]:
+                    - generic [ref=e2017]: 
+                  - generic [ref=e2018]:
+                    - button "Mark played" [ref=e2019]:
+                      - generic [ref=e2020]: 
+                    - button "Add to favourites" [ref=e2021]:
+                      - generic [ref=e2022]: 
+                    - button "More" [ref=e2023]:
+                      - generic [ref=e2024]: 
+              - link "Blast of Tempest" [ref=e2027]:
+                - /url: "#/details?id=37209a10f7a6f8d8c62d1b5fc61f28f2&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e2028]: 2012 - 2013
+            - generic [ref=e2030] [cursor=pointer]:
+              - generic [ref=e2031]:
+                - generic [ref=e2033]: 
+                - img "Beyond the Boundary" [ref=e2034]:
+                  - generic [ref=e2036]: "12"
+                - generic:
+                  - button "Play" [ref=e2037]:
+                    - generic [ref=e2038]: 
+                  - generic [ref=e2039]:
+                    - button "Mark played" [ref=e2040]:
+                      - generic [ref=e2041]: 
+                    - button "Add to favourites" [ref=e2042]:
+                      - generic [ref=e2043]: 
+                    - button "More" [ref=e2044]:
+                      - generic [ref=e2045]: 
+              - link "Beyond the Boundary" [ref=e2048]:
+                - /url: "#/details?id=9539b295130008ea01629c1731dc3d86&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e2049]: "2013"
+            - generic [ref=e2051] [cursor=pointer]:
+              - generic [ref=e2052]:
+                - generic [ref=e2054]: 
+                - img "Daemons of the Shadow Realm" [ref=e2055]:
+                  - generic [ref=e2057]: "11"
+                - generic:
+                  - button "Play" [ref=e2058]:
+                    - generic [ref=e2059]: 
+                  - generic [ref=e2060]:
+                    - button "Mark played" [ref=e2061]:
+                      - generic [ref=e2062]: 
+                    - button "Add to favourites" [ref=e2063]:
+                      - generic [ref=e2064]: 
+                    - button "More" [ref=e2065]:
+                      - generic [ref=e2066]: 
+              - link "Daemons of the Shadow Realm" [ref=e2069]:
+                - /url: "#/details?id=9817b9aec12923b6b5df3e6ff97512b1&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e2070]: 2026 - Present
+            - generic [ref=e2072] [cursor=pointer]:
+              - generic [ref=e2073]:
+                - generic [ref=e2075]: 
+                - img "Battle Game in 5 Seconds" [ref=e2076]:
+                  - generic [ref=e2078]: "2"
+                - generic:
+                  - button "Play" [ref=e2079]:
+                    - generic [ref=e2080]: 
+                  - generic [ref=e2081]:
+                    - button "Mark played" [ref=e2082]:
+                      - generic [ref=e2083]: 
+                    - button "Add to favourites" [ref=e2084]:
+                      - generic [ref=e2085]: 
+                    - button "More" [ref=e2086]:
+                      - generic [ref=e2087]: 
+              - link "Battle Game in 5 Seconds" [ref=e2090]:
+                - /url: "#/details?id=7f45bc057d8321dd7c340570c371884e&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e2091]: "2021"
+            - generic [ref=e2093] [cursor=pointer]:
+              - generic [ref=e2094]:
+                - generic [ref=e2096]: 
+                - img "One Piece" [ref=e2097]
+                - generic:
+                  - button "Play" [ref=e2101]:
+                    - generic [ref=e2102]: 
+                  - generic [ref=e2103]:
+                    - button "Mark played" [ref=e2104]:
+                      - generic [ref=e2105]: 
+                    - button "Add to favourites" [ref=e2106]:
+                      - generic [ref=e2107]: 
+                    - button "More" [ref=e2108]:
+                      - generic [ref=e2109]: 
+              - link "ONE PIECE" [ref=e2112]:
+                - /url: "#/details?id=c928c850f9ccf3f8ed42f5f6727c161b&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - link "S23:E1166 - One Piece" [ref=e2115]:
+                - /url: "#/details?id=7bdfb7e40c7d44a6d45201916a2376df&serverId=6bb0b1972360457da33fbf7b143a09a5"
+            - generic [ref=e2117] [cursor=pointer]:
+              - generic [ref=e2118]:
+                - generic [ref=e2120]: 
+                - img "Hoping, Blooming, Thundering" [ref=e2121]
+                - generic:
+                  - button "Play" [ref=e2122]:
+                    - generic [ref=e2123]: 
+                  - generic [ref=e2124]:
+                    - button "Mark played" [ref=e2125]:
+                      - generic [ref=e2126]: 
+                    - button "Add to favourites" [ref=e2127]:
+                      - generic [ref=e2128]: 
+                    - button "More" [ref=e2129]:
+                      - generic [ref=e2130]: 
+              - 'link "Wistoria: Wand and Sword" [ref=e2133]':
+                - /url: "#/details?id=75032d2bdb8b5f38e89c301046f35aeb&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - link "S2:E10 - Hoping, Blooming, Thundering" [ref=e2136]:
+                - /url: "#/details?id=ef039bd24e3229fe5c7055f7b2794b46&serverId=6bb0b1972360457da33fbf7b143a09a5"
+            - generic [ref=e2138] [cursor=pointer]:
+              - generic [ref=e2139]:
+                - generic [ref=e2141]: 
+                - img "Ajin" [ref=e2142]:
+                  - generic [ref=e2144]: "13"
+                - generic:
+                  - button "Play" [ref=e2145]:
+                    - generic [ref=e2146]: 
+                  - generic [ref=e2147]:
+                    - button "Mark played" [ref=e2148]:
+                      - generic [ref=e2149]: 
+                    - button "Add to favourites" [ref=e2150]:
+                      - generic [ref=e2151]: 
+                    - button "More" [ref=e2152]:
+                      - generic [ref=e2153]: 
+              - link "Ajin" [ref=e2156]:
+                - /url: "#/details?id=598620458c9aba7c1366e16042210572&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - generic [ref=e2157]: "2016"
+            - generic [ref=e2159] [cursor=pointer]:
+              - generic [ref=e2160]:
+                - generic [ref=e2162]: 
+                - img "The Best at Being the Worst" [ref=e2163]
+                - generic:
+                  - button "Play" [ref=e2164]:
+                    - generic [ref=e2165]: 
+                  - generic [ref=e2166]:
+                    - button "Mark played" [ref=e2167]:
+                      - generic [ref=e2168]: 
+                    - button "Add to favourites" [ref=e2169]:
+                      - generic [ref=e2170]: 
+                    - button "More" [ref=e2171]:
+                      - generic [ref=e2172]: 
+              - 'link "Arifureta: From Commonplace to World''s Strongest" [ref=e2175]':
+                - /url: "#/details?id=7f50b199ecf5f931b6cb5a80df34745c&serverId=6bb0b1972360457da33fbf7b143a09a5"
+              - link "S1:E13 - The Best at Being the Worst" [ref=e2178]:
+                - /url: "#/details?id=266e842c8b59db1c6195b49fcf32ec99&serverId=6bb0b1972360457da33fbf7b143a09a5"
