@@ -37,33 +37,23 @@
     height: 5em;
 }
 
-/*Accommodate ultrawide aspect ratios*/
+/*Accommodate ultrawide aspect ratios - 10.11 compatible*/
 @media (min-aspect-ratio: 1.98/1) {
   .detailImageContainer .card {
     width: 21vw !important ;
+    left: 3.3% !important;
   }
-  .detailRibbon {
-    padding-left: 28.45vw !important;
-  }
-  .detailPagePrimaryContent {
-    padding-left: 28.45vw !important;
-  }
-  .detailPageContent {
-    padding-left: 28.45vw !important;
+  .layout-desktop .infoWrapper {
+    margin-left: 24.3vw !important;
   }
 }
 @media (min-aspect-ratio: 2.7/1) {
   .detailImageContainer .card {
     width: 16vw !important;
+    left: 3.3% !important;
   }
-  .detailRibbon {
-    padding-left: 23.45vw !important;
-  }
-  .detailPagePrimaryContent {
-    padding-left: 23.45vw !important;
-  }
-  .detailPageContent {
-    padding-left: 23.45vw !important;
+  .layout-desktop .infoWrapper {
+    margin-left: 19.3vw !important;
   }
 }
 

@@ -1,6 +1,5 @@
 @supports (backdrop-filter: blur(15px)) {
   .skinHeader-withBackground,
-  .css-fknfom,
   .dialog,
   .mainDrawer,
   .toast,
@@ -15,8 +14,7 @@
     will-change: backdrop-filter;
   }
 
-  .skinHeader-withBackground,
-  .css-fknfom {
+  .skinHeader-withBackground {
     backdrop-filter: blur(15px);
   }
   .dialog,

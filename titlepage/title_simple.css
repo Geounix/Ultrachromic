@@ -9,7 +9,8 @@
 .detailLogo {
   display: none;
 }
-.detailPagePrimaryContainer {
+.detailPagePrimaryContainer,
+.infoWrapper {
   background: rgba(0,0,0,0) !important;
 }
 .layout-desktop .detailRibbon {

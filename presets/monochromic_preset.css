@@ -1,6 +1,12 @@
+/* Ultrachromic Monochromic Preset
+   Instructions: Replace 'CTalvio' with your GitHub username, or use the URL
+   of your own repository where these files are hosted.
+   Example: https://cdn.jsdelivr.net/gh/YOUR_USERNAME/Ultrachromic/...
+*/
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css');
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css');
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css');
+@import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_1011_fixes.css');
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding.css');
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/smallercast.css');
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_compactlist.css');

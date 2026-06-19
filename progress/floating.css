@@ -1,7 +1,10 @@
-/*New progress bar*/
+/*New progress bar - 10.11 compatible*/
 #indexPage .innerCardFooterClear,
 .libraryPage .innerCardFooterClear,
-#itemDetailPage .innerCardFooterClear {
+#itemDetailPage .innerCardFooterClear,
+#indexPage .fullInnerCardFooterClear,
+.libraryPage .fullInnerCardFooterClear,
+#itemDetailPage .fullInnerCardFooterClear {
     background-color: transparent !important;
     box-shadow: none;
 }

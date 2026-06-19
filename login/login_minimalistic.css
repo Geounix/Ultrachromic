@@ -5,14 +5,15 @@
 }
 
 /*Hide "please login" text, margin is to prevent login form moving too far up*/
-#loginPage h1 {
+#loginPage h1,
+.visualLoginForm > h1:first-child {
   display: none
 }
 #loginPage .padded-left.padded-right.padded-bottom-page {
   margin-top: 8em
 }
 
-/*Hide "manual" and "forgot" buttons}*/
+/*Hide "manual" and "forgot" buttons*/
 #loginPage .raised.cancel.block.btnForgotPassword.emby-button {
   display: none
 }

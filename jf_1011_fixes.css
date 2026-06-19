@@ -1,0 +1,106 @@
+/* =====================================================
+   Ultrachromic - Jellyfin 10.11 Compatibility Fixes
+   Include this file when running Jellyfin 10.11.x
+   ===================================================== */
+
+/* ---- Detail Page 10.11 Restructuring ---- */
+.layout-desktop .detailImageContainer .card {
+    position: absolute !important;
+    top: 2em !important;
+    width: 18.3vw !important;
+    left: 3.3% !important;
+}
+.layout-desktop .detailImageContainer {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+}
+.layout-desktop .infoWrapper {
+    margin-top: 245px !important;
+    margin-left: 20.8vw !important;
+}
+.layout-desktop .nameContainer {
+    margin-top: -3em !important;
+}
+.layout-desktop .itemMiscInfo {
+    margin-left: 0.75em !important;
+    margin-top: 1em !important;
+}
+.layout-desktop .detailSection {
+    margin-right: 0 !important;
+}
+.layout-desktop .detailPageContent {
+    padding-left: 3.3% !important;
+    padding-right: 0 !important;
+}
+
+/* Ultrawide aspect ratio support for 10.11 */
+@media (min-aspect-ratio: 1.98/1) {
+  .detailImageContainer .card {
+    width: 21vw !important;
+    left: 3.3% !important;
+  }
+  .layout-desktop .infoWrapper {
+    margin-left: 24.3vw !important;
+  }
+}
+@media (min-aspect-ratio: 2.7/1) {
+  .detailImageContainer .card {
+    width: 16vw !important;
+    left: 3.3% !important;
+  }
+  .layout-desktop .infoWrapper {
+    margin-left: 19.3vw !important;
+  }
+}
+
+/* ---- MUI Dashboard Theming ---- */
+.MuiPaper-root,
+.MuiCard-root {
+  border-radius: var(--rounding, 12px) !important;
+}
+.MuiDialog-paper {
+  border-radius: var(--rounding, 12px) !important;
+  background: rgba(0, 0, 0, 0.85) !important;
+}
+.MuiAppBar-root {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.MuiTable-root {
+  background: transparent !important;
+}
+.MuiTableRow-root {
+  background: transparent !important;
+}
+
+/* ---- Login 10.11 ---- */
+.visualLoginForm > h1:first-child {
+  display: none;
+}
+
+/* ---- Info banner ---- */
+.infoBanner {
+  background: #101010;
+}
+
+/* ---- Next up section ordering ---- */
+.nextUpSection {
+  order: 5 !important;
+}
+.itemDetailsGroup {
+  order: 3 !important;
+}
+.collectionItems {
+  order: 6 !important;
+}
+
+/* ---- Compact episodes list fix ---- */
+.listItemImage.listItemImage-large.itemAction.lazy {
+  transition: filter 0.2s;
+}
+
+/* ---- Dashboard header fix ---- */
+.force-scroll {
+  overflow-y: auto;
+  overflow-x: auto;
+}

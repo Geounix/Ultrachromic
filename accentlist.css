@@ -21,7 +21,7 @@ a[data-role="button"]:hover {
 }
 
 .navMenuOption-selected,
-.css-17c09up.Mui-selected {
+.Mui-selected {
   color: rgba(var(--accent));
 }
 .mdl-slider-background-lower {
@@ -80,8 +80,7 @@ progress::-webkit-progress-value {
 #itemDetailPage .button-link {color: inherit !important;}
 
 .navMenuOption:hover,
-.actionSheetMenuItem:hover,
-.css-17c09up:hover {
+.actionSheetMenuItem:hover {
   background-color: rgba(var(--accent),0.5) !important;
 }
 
@@ -120,6 +119,23 @@ progress::-webkit-progress-value {
   text-shadow: none !important;
 }
 
-.css-4yt2of {
+.mainDrawer {
   border-right: 1px solid rgba(var(--accent), 0.12);
+}
+
+/* MUI Dashboard theming for 10.11+ */
+.MuiSwitch-colorPrimary.Mui-checked {
+  color: rgba(var(--accent));
+}
+.MuiSwitch-colorPrimary.Mui-checked + .MuiSwitch-track {
+  background-color: rgba(var(--accent), 0.5);
+}
+.MuiCheckbox-colorPrimary.Mui-checked {
+  color: rgba(var(--accent));
+}
+.MuiLinearProgress-root .MuiLinearProgress-bar {
+  background-color: rgba(var(--accent), 0.75);
+}
+.MuiButton-containedPrimary {
+  background-color: rgba(var(--accent)) !important;
 }
