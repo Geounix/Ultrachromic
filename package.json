@@ -1,0 +1,21 @@
+{
+  "name": "ultrachromic",
+  "version": "1.0.0",
+  "description": "The final form, the true evolution of the chromic theme saga! The old trilogy of chromic themes are deprecated, as their appearances can be replicated using Ultrachromic.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geounix/Ultrachromic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Geounix/Ultrachromic/issues"
+  },
+  "homepage": "https://github.com/Geounix/Ultrachromic#readme"
+}

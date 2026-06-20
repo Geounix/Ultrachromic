@@ -1,54 +1,55 @@
 /* ============================================================
    Ultrachromic FULL - Jellyfin 10.11.x
    The ultimate "jevi" look: compact, colorful, glowing, glassy
+   Version: v4 - Fixed detail page layout, font CORS, buttons
    ============================================================ */
 
 /* 1. Font */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/jf_font.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/jf_font.css?v=4');
 
 /* 2. Fixes & base */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/fixes.css?v=2');
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/base.css?v=2');
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/accentlist.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/fixes.css?v=4');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/base.css?v=4');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/accentlist.css?v=4');
 
-/* 3. 10.11 compatibility */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/jf_1011_fixes.css?v=2');
+/* 3. 10.11 compatibility (detail page layout, buttons, CORS, overflow) */
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/jf_1011_fixes.css?v=4');
 
 /* 4. Rounded corners */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/rounding.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/rounding.css?v=4');
 
 /* 5. Smaller cast list */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/smallercast.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/smallercast.css?v=4');
 
 /* 6. Compact episode list */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/episodelist/episodes_compactlist.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/episodelist/episodes_compactlist.css?v=4');
 
 /* 7. Transparent top bar */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/header/header_transparent-dashboard.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/header/header_transparent-dashboard.css?v=4');
 
 /* 8. Login with frame */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/login/login_frame.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/login/login_frame.css?v=4');
 
 /* 9. Input fields with border */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/fields/fields_border.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/fields/fields_border.css?v=4');
 
 /* 10. Corner indicators */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/cornerindicator/indicator_corner.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/cornerindicator/indicator_corner.css?v=4');
 
 /* 11. Colorful type (dark + accent colors) */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/type/colorful.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/type/colorful.css?v=4');
 
 /* 12. Title page without logo */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/titlepage/title_simple.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/titlepage/title_simple.css?v=4');
 
 /* 13. Floating progress bar */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/progress/floating.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/progress/floating.css?v=4');
 
 /* 14. Effects - GLOW + GLASS + PAN + RIPPLE */
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/effects/hoverglow.css?v=2');
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/effects/glassy.css?v=2');
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/effects/pan-animation.css?v=2');
-@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/effects/ripple.css?v=2');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/effects/hoverglow.css?v=4');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/effects/glassy.css?v=4');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/effects/pan-animation.css?v=4');
+@import url('https://cdn.jsdelivr.net/gh/Geounix/Ultrachromic/effects/ripple.css?v=4');
 
 /* ============================================================
    MANUAL TWEAKS - The "jevi" finishing touches
@@ -104,4 +105,79 @@
 .nowPlayingBar {
   backdrop-filter: blur(15px);
   background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* =====================================================
+   DETAIL PAGE - 10.11.11 LAYOUT FIXES
+   The key issue: in 10.11 the page is laid out as:
+     .detailPageContent (flex row)
+       .detailImageContainer   ← poster card (left)
+       .detailRibbon           ← title + buttons + info (right)
+   
+   The overlay/overlap of year/metadata over description
+   was caused by incorrect stacking context. These rules
+   enforce proper vertical stacking inside .detailRibbon.
+   ===================================================== */
+
+/* The ribbon is the right-side content area */
+.layout-desktop .detailRibbon {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: visible;
+  padding-top: 2vh;
+  padding-left: 2em;
+}
+
+/* Stack title, metadata, buttons vertically */
+.layout-desktop .infoWrapper,
+.layout-desktop .detailPagePrimaryContainer {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0.4em;
+  width: 100%;
+}
+
+/* Title text: clear, readable */
+.layout-desktop #itemDetailPage h4 {
+  font-size: 2em !important;
+  font-weight: 700 !important;
+  margin: 0 0 0.2em 0 !important;
+  line-height: 1.2;
+  white-space: normal !important;
+}
+
+/* Metadata row (year, content rating, star rating) - horizontal */
+.layout-desktop .itemMiscInfo,
+.layout-desktop .mediaInfoItem {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin: 0 0 0.4em 0 !important;
+}
+
+/* Buttons row: left-aligned, NOT pushed right */
+.layout-desktop .mainDetailButtons {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  width: 100% !important;
+  position: static !important;
+  float: none !important;
+  margin: 0.4em 0 0.6em 0 !important;
+  right: unset !important;
+  top: unset !important;
+}
+
+/* Description/overview: below the buttons, proper spacing */
+.layout-desktop .overview,
+.layout-desktop .overviewContainer,
+.layout-desktop #itemDetailPage .itemOverview {
+  display: block !important;
+  position: static !important;
+  margin-top: 0.5em !important;
 }

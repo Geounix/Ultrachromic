@@ -1,0 +1,41 @@
+[     125ms] [LOG] Stored JSON credentials: {"Servers":[{"DateLastAccessed":1781848844594,"LastConnectionMode":2,"ManualAddress":"http://10.0.0.2:8097","manualAddressOnly":true,"Name":"Geunix","Id":"6bb0b1972360457da33fbf7b143a09a5","LocalAddress":"http://[::1]:8096","AccessToken":"7aa0a1c909234e628f13b8057d8491ad","UserId":"42b4c3068362436f9ea8daf82e91f16f"}]} @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     126ms] [LOG] Begin ConnectionManager constructor @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     127ms] [INFO] [jellyfin-web]
+version: 10.11.11
+commit: 35c0793ece
+build: 10.11.11 @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     142ms] [LOG] returning instance from getOrAddApiClient @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     152ms] [DIR] e @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     185ms] [LOG] returning instance from getOrAddApiClient @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     185ms] [LOG] returning instance from getOrAddApiClient @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     186ms] [WARNING] serviceWorker unsupported @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     312ms] [INFO] [ApiProvider] Could not get current user undefined @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     324ms] [LOG] Begin connect @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     324ms] [LOG] Begin connectToServers, with 1 servers @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     325ms] [INFO] [ConnectionManager] tryReconnect addresses [http://10.0.0.2:8097] @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     328ms] [LOG] Requesting url without automatic networking: http://10.0.0.2:8097/System/Info/Public @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     426ms] [LOG] getTryConnectPromise http://10.0.0.2:8097 @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     433ms] [LOG] Reconnect succeeded to http://10.0.0.2:8097 @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     476ms] [LOG] returning instance from getOrAddApiClient @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     476ms] [LOG] Setting server address to http://10.0.0.2:8097 @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     476ms] [LOG] Requesting url without automatic networking: http://10.0.0.2:8097/Sessions/Capabilities/Full @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     476ms] [LOG] calling apiClient.ensureWebSocket @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     477ms] [LOG] opening web socket with url: ws://10.0.0.2:8097/socket?api_key=7aa0a1c909234e628f13b8057d8491ad&deviceId=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzE0OS4wLjAuMCBTYWZhcmkvNTM3LjM2fDE3ODE4NDc3MzE4OTY1 @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     477ms] [LOG] Requesting url without automatic networking: http://10.0.0.2:8097/Users/42b4c3068362436f9ea8daf82e91f16f @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     534ms] [LOG] web socket connection opened @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     558ms] [LOG] returning instance from getOrAddApiClient @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     558ms] [LOG] Requesting url without automatic networking: http://10.0.0.2:8097/DisplayPreferences/usersettings?userId=42b4c3068362436f9ea8daf82e91f16f&client=emby @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     592ms] [LOG] resolving connectToServers with result.State: SignedIn @ http://10.0.0.2:8097/web/main.jellyfin.bundle.js?4c3e5ec610f9c71cad1c:1
+[     708ms] [LOG] Requesting url without automatic networking: http://10.0.0.2:8097/LiveTv/Programs/Recommended?userId=42b4c3068362436f9ea8daf82e91f16f&IsAiring=true&limit=1&ImageTypeLimit=1&EnableImageTypes=Primary%2CThumb%2CBackdrop&EnableTotalRecordCount=false&Fields=ChannelInfo%2CPrimaryImageAspectRatio @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     765ms] [LOG] Requesting url without automatic networking: http://10.0.0.2:8097/Users/42b4c3068362436f9ea8daf82e91f16f/Items/Resume?Limit=12&Recursive=true&Fields=PrimaryImageAspectRatio&ImageTypeLimit=1&EnableImageTypes=Primary%2CBackdrop%2CThumb&EnableTotalRecordCount=false&MediaTypes=Video @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     766ms] [LOG] Requesting url without automatic networking: http://10.0.0.2:8097/Users/42b4c3068362436f9ea8daf82e91f16f/Items/Resume?Limit=12&Recursive=true&Fields=PrimaryImageAspectRatio&ImageTypeLimit=1&EnableImageTypes=Primary%2CBackdrop%2CThumb&EnableTotalRecordCount=false&MediaTypes=Audio @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     766ms] [LOG] Requesting url without automatic networking: http://10.0.0.2:8097/Users/42b4c3068362436f9ea8daf82e91f16f/Items/Resume?Limit=12&Recursive=true&Fields=PrimaryImageAspectRatio&ImageTypeLimit=1&EnableImageTypes=Primary%2CBackdrop%2CThumb&EnableTotalRecordCount=false&MediaTypes=Book @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     766ms] [LOG] Requesting url without automatic networking: http://10.0.0.2:8097/Shows/NextUp?Limit=24&Fields=PrimaryImageAspectRatio%2CDateCreated%2CPath%2CMediaSourceCount&UserId=42b4c3068362436f9ea8daf82e91f16f&ImageTypeLimit=1&EnableImageTypes=Primary%2CBackdrop%2CBanner%2CThumb&EnableTotalRecordCount=false&DisableFirstEpisode=false&NextUpDateCutoff=2025-06-20T01%3A53%3A10.332Z&EnableResumable=false&EnableRewatching=false @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     767ms] [LOG] Requesting url without automatic networking: http://10.0.0.2:8097/Users/42b4c3068362436f9ea8daf82e91f16f/Items/Latest?Limit=16&Fields=PrimaryImageAspectRatio%2CPath&ImageTypeLimit=1&EnableImageTypes=Primary%2CBackdrop%2CThumb&ParentId=f137a2dd21bbc1b99aa5c0f6bf02a805 @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[     767ms] [LOG] Requesting url without automatic networking: http://10.0.0.2:8097/Users/42b4c3068362436f9ea8daf82e91f16f/Items/Latest?Limit=16&Fields=PrimaryImageAspectRatio%2CPath&ImageTypeLimit=1&EnableImageTypes=Primary%2CBackdrop%2CThumb&ParentId=a656b907eb3a73532e40e44b968d0225 @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[    1039ms] [LOG] Sending web socket message: KeepAlive @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[    6485ms] [LOG] Requesting url without automatic networking: http://10.0.0.2:8097/System/Endpoint @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[    6501ms] [LOG] Requesting http://10.0.0.2:8097/Playback/BitrateTest?Size=500000 @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[    6528ms] [LOG] Requesting http://10.0.0.2:8097/Playback/BitrateTest?Size=1000000 @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[    6568ms] [LOG] Requesting http://10.0.0.2:8097/Playback/BitrateTest?Size=3000000 @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1
+[   31045ms] [LOG] Sending web socket message: KeepAlive @ http://10.0.0.2:8097/web/node_modules.jellyfin-apiclient.bundle.js?4c3e5ec610f9c71cad1c:1

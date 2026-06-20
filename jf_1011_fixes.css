@@ -1,10 +1,93 @@
 /* =====================================================
    Ultrachromic - Jellyfin 10.11 Compatibility Fixes
-   Cosmetic fixes only - let 10.11 handle layout natively
+   Verified against Jellyfin 10.11.11 DOM structure
    ===================================================== */
 
-/* ---- Detail Page 10.11 - Let Jellyfin handle layout ---- */
-/* Removed absolute positioning overrides - 10.11 uses .detailRibbon + .infoWrapper natively */
+/* ---- Detail Page: Fix infoWrapper layout in 10.11 ----
+   In 10.11 the structure is:
+     .detailPageContent
+       .detailImageContainer  (poster, left side)
+       .detailRibbon
+         .detailPagePrimaryContainer
+           .infoWrapper
+             .nameContainer   (h4 title + metadata row)
+             .mainDetailButtons
+         .detailSectionContent (description, fields, episodes)
+*/
+
+/* Make the ribbon a proper column flex so items stack vertically */
+.layout-desktop .detailRibbon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* infoWrapper holds the title row + buttons - stack vertically, left-aligned */
+.layout-desktop .infoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* The name/metadata container: stack title then metadata row */
+.detailPagePrimaryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Title h4 - give proper spacing */
+.layout-desktop #itemDetailPage h4.itemName,
+.layout-desktop #itemDetailPage .detailPagePrimaryContainer h4 {
+  margin-bottom: 0.3em !important;
+  margin-top: 0 !important;
+}
+
+/* Metadata row (year, content rating, star rating) - put on its own line */
+.layout-desktop .itemMiscInfo,
+.layout-desktop .mediaInfoItem,
+.layout-desktop .itemDetailGroup > .itemMiscInfo {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 0.5em !important;
+}
+
+/* Buttons row: keep inline, don't let it float right */
+.layout-desktop .mainDetailButtons {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start !important;
+  width: 100%;
+  margin-top: 0.5em !important;
+  position: static !important;
+  float: none !important;
+  right: unset !important;
+}
+
+/* Detail section (description + fields) - ensure it flows below the ribbon */
+.detailSectionContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Overview/description text: ensure it doesn't overlap year/metadata */
+.overview,
+.overviewContainer,
+.itemOverview {
+  display: block !important;
+  position: static !important;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
 
 /* ---- MUI Dashboard Theming ---- */
 .MuiPaper-root,
@@ -48,13 +131,27 @@
 }
 
 /* ---- Dashboard header fix ---- */
+/* Avoid double scrollbar - only allow vertical scrolling */
 .force-scroll {
   overflow-y: auto;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 /* ---- Header blur fix for 10.11 ---- */
 /* backdrop-filter needs proper stacking context in 10.11 */
 .skinHeader-withBackground {
   isolation: isolate;
+}
+
+/* ---- 10.11 overrides backdrop-filter: none on .semiTransparent ----
+   We must use !important to beat the Jellyfin 10.11 built-in override */
+.skinHeader.semiTransparent {
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+}
+
+/* ---- Prevent page-level horizontal overflow ---- */
+#itemDetailPage,
+.detailPage {
+  overflow-x: hidden !important;
 }

@@ -1,19 +1,21 @@
-/*Accommodate ultrawide aspect ratios - 10.11 compatible*/
+/* fixes_new.css - Jellyfin 10.11 ultrawide layout
+   In 10.11 the detail page uses native flexbox (poster | ribbon).
+   We constrain poster width only; no absolute left: positioning needed. */
 @media (min-aspect-ratio: 1.98/1) {
-  .detailImageContainer .card {
-    width: 21vw !important ;
-    left: 3.3% !important;
+  .detailImageContainer {
+    max-width: 22vw !important;
+    flex-shrink: 0;
   }
-  .layout-desktop .infoWrapper {
-    margin-left: 24.3vw !important;
+  .detailImageContainer .card {
+    width: 100% !important;
   }
 }
 @media (min-aspect-ratio: 2.7/1) {
-  .detailImageContainer .card {
-    width: 16vw !important;
-    left: 3.3% !important;
+  .detailImageContainer {
+    max-width: 17vw !important;
+    flex-shrink: 0;
   }
-  .layout-desktop .infoWrapper {
-    margin-left: 19.3vw !important;
+  .detailImageContainer .card {
+    width: 100% !important;
   }
 }

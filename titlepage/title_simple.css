@@ -1,14 +1,22 @@
-/*Tweak series/movie/album title screen*/
+/* =====================================================
+   title_simple.css - Jellyfin 10.11.11 compatible
+   Shows backdrop, no logo image, title as plain text
+   ===================================================== */
 
+/* Limit the info section width so it doesn't overflow on wide screens */
 .detailSectionContent {
   max-width: 66em;
 }
 .trackSelections {
   max-width: 22em;
 }
+
+/* Hide the image-based logo (we show the text title h4 instead) */
 .detailLogo {
-  display: none;
+  display: none !important;
 }
+
+/* Transparent backgrounds for the detail page areas */
 .detailPagePrimaryContainer,
 .infoWrapper {
   background: rgba(0,0,0,0) !important;
@@ -16,11 +24,32 @@
 .layout-desktop .detailRibbon {
   background: rgba(0,0,0,0) !important;
 }
-@media all and (min-width: 32em){
+
+/* ---- 10.11 layout: push detailRibbon right of the poster ----
+   In 10.11, .detailRibbon sits to the right of .detailImageContainer.
+   We give it a left margin to clear the poster card (~22vw wide). */
+@media all and (min-width: 32em) {
+  .layout-desktop .detailRibbon {
+    margin-top: 5vh;
+    margin-left: 0;   /* 10.11 handles the side-by-side via its own layout */
+    padding-top: 0;
+  }
+
+  /* Hide the separate backdrop element – the blurred wallpaper handles it */
   .itemBackdrop {
     display: none;
   }
-	.layout-desktop .detailRibbon {
-    margin-top: 13vh;
-	}
+}
+
+/* Make sure the h4 title is readable (not hidden or truncated) */
+#itemDetailPage h4.itemName,
+.detailPageContent .itemName {
+  display: block !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  text-overflow: unset !important;
+  font-size: 1.6em;
+  font-weight: 700;
+  margin: 0.2em 0 0.4em 0;
+  line-height: 1.2;
 }
